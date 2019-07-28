@@ -1,3 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+  box-sizing: border-box;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #dd5824, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+  align-self: center;
+}
+
+header .row .col-md-5 img {
+  width: 90%;
+}
+
+header {
+  background: #ff512f;
+  /* fallback for old browsers */
+  background: var(--bggradient);
+}
+
+header .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+  font-size: 3vmin;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+.primary-btn {
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+#title .container {
+  display: grid;
+  margin: 20px 0px;
+  grid-template-rows: 80px;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-areas: 
+  "line1 title line2"
+  ;
+}
+.ConnectMe {
+  padding-left: 0;
+}
+.line1 {
+  grid-area: line1;
+  padding-top: 35px;
+}
+.line2 {
+  grid-area: line2;
+  padding-top: 35px;
+}
+
+.wrapper {
+  max-width: 1750px;
+  margin: auto;
+}
+
 footer {
   position: absolute;
   width: 100%;
@@ -87,7 +177,6 @@ footer {
 .footer .container {
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
 }
 
 .section-1 .container {
@@ -143,4 +232,26 @@ footer {
 
 .InVision {
   margin: 5% auto;
+}
+
+.social .fab {
+  color: white;
+  font-size: 25px;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  background: #f7931e;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.social a {
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+.social a:hover {
+  background: #707070;
+  box-shadow: black;
 }
